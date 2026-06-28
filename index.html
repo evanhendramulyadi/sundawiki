@@ -511,7 +511,7 @@
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
-    <a href="#" class="logo">SundaWiki</a>
+    <a href="#" class="logo" id="logo">SundaWiki</a>
 
     <ul class="nav-links" id="navLinks">
       <li><a href="#pengertian" id="nav-pengertian" onclick="toggleMenu()">PENGERTIAN</a></li>
@@ -723,7 +723,7 @@
       "Sunda bukan hanya suku, melainkan cara hidup yang penuh kebijaksanaan dan harmoni dengan alam semesta."
     </div>
 
-    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="cta-button" id="btn-top"
+    <a href="#" class="cta-button" id="btn-top"
       style="margin-top: 2rem;">Kembali ke Atas ↑</a>
   </section>
 
@@ -920,6 +920,24 @@
         const nav = document.getElementById('navLinks');
         if (nav.classList.contains('active')) nav.classList.remove('active');
       }
+    });
+
+    // Smooth scroll saat klik logo SundaWiki
+    document.getElementById("logo").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    // Smooth scroll tombol kembali ke atas
+    document.getElementById("btn-top").addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
   </script>
 </body>
