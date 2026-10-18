@@ -419,8 +419,6 @@
 
     /* Mobile */
     @media (max-width: 992px) {
-
-
       #hubungan>div {
         display: grid !important;
         grid-template-columns: 1fr !important;
@@ -437,7 +435,6 @@
         padding-top: 60px;
         padding-bottom: 100px;
       }
-
 
       .nav-links {
         position: fixed;
@@ -492,7 +489,6 @@
     @media (max-width: 768px) {
       section {
         padding: 80px 5%;
-
       }
 
       .nilai-grid {
@@ -646,7 +642,6 @@
     </div>
   </section>
 
-  <!-- SECTION DIVIDER -->
   <!-- SECTION DIVIDER -->
   <div style="
   height: 10px;
@@ -861,7 +856,7 @@
     function switchLanguage(lang) {
       currentLang = lang;
 
-      document.documentElement.lang = lang
+      document.documentElement.lang = lang;
 
       // Update buttons
       document.getElementById('btn-id').classList.toggle('active', lang === 'id');
