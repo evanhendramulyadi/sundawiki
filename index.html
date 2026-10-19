@@ -780,6 +780,7 @@
 
     const translations = {
       id: {
+        pageTitle: "SundaWiki — Spiritualitas Sunda",
         navPengertian: "PENGERTIAN",
         navKonsep: "KONSEP UTAMA",
         navNilai: "5 NILAI UTAMA",
@@ -816,6 +817,7 @@
         quote: "Sunda bukan hanya suku, melainkan cara hidup yang penuh kebijaksanaan dan harmoni dengan alam semesta."
       },
       en: {
+        pageTitle: "SundaWiki — Sundanese Spirituality",
         navPengertian: "DEFINITION",
         navKonsep: "CORE CONCEPT",
         ctaButton: "Explore Sundanese Heritage",
@@ -863,6 +865,8 @@
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
       const t = translations[lang];
+
+      document.title = t.pageTitle;
 
       document.getElementById('hero-subtitle').innerHTML = t.heroSubtitle;
       document.getElementById('title-pengertian').textContent = t.titlePengertian;
