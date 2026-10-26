@@ -2,7 +2,7 @@
   <img src="img/logo-sundawiki.png" alt="SundaWiki Logo" width="100">
 </p>
 
-<h1 align="center">SundaWiki</h1>
+<h1 align="left">SundaWiki</h1>
 
 SundaWiki is an elegant and responsive cultural encyclopedia website dedicated to exploring, preserving, and sharing knowledge about Sundanese spirituality, core values, and indigenous heritage.
 
