@@ -666,7 +666,7 @@
   <section id="baduy" class="baduy-section">
     <div>
       <div class="baduy-img">
-        <img src="img/baduy-tribe.jpg" alt="Baduy Tribe">
+        <img src="img/baduy-tribe.jpg" alt="Suku Baduy" id="img-baduy">
       </div>
     </div>
     <div>
@@ -700,7 +700,7 @@
       </div>
       <div style="text-align: center;">
         <div class="zoom-img">
-          <img src="img/sundanese-traditional-house.jpg" alt="Sundanese Traditional House">
+          <img src="img/sundanese-traditional-house.jpg" alt="Rumah Adat Sunda" id="img-rumah-adat">
         </div>
       </div>
     </div>
@@ -814,7 +814,9 @@
         hubunganDesc2: "Meskipun Baduy menolak pengaruh luar, nilai-nilai seperti Cageur, Bageur, Bener, Pinter, tur Singer tetap menjadi pondasi kehidupan mereka.",
         titleKesimpulan: "Kesimpulan",
         kesimpulanDesc: "Nilai-nilai spiritualitas Sunda bukan hanya warisan masa lalu, melainkan panduan hidup yang universal dan dapat diterapkan oleh siapa saja di era modern ini.",
-        quote: "Sunda bukan hanya suku, melainkan cara hidup yang penuh kebijaksanaan dan harmoni dengan alam semesta."
+        quote: "Sunda bukan hanya suku, melainkan cara hidup yang penuh kebijaksanaan dan harmoni dengan alam semesta.",
+        altBaduy: "Suku Baduy",
+        altRumahAdat: "Rumah Adat Sunda"
       },
       en: {
         pageTitle: "SundaWiki — Sundanese Spirituality",
@@ -851,7 +853,9 @@
         hubunganDesc2: "Even though the Baduy reject external influences, values such as Cageur, Bageur, Bener, Pinter, and Singer remain the foundation of their lives.",
         titleKesimpulan: "Conclusion",
         kesimpulanDesc: "Sundanese spiritual values are not just a legacy of the past, but a universal life guide that can be applied by anyone in this modern era.",
-        quote: "Sunda is not just an ethnicity, but a way of life full of wisdom and harmony with the universe."
+        quote: "Sunda is not just an ethnicity, but a way of life full of wisdom and harmony with the universe.",
+        altBaduy: "Baduy Tribe",
+        altRumahAdat: "Sundanese Traditional House"
       }
     };
 
@@ -902,6 +906,8 @@
       document.getElementById('nav-nilai').textContent = t.navNilai;
       document.getElementById('nav-baduy').textContent = t.navBaduy;
       document.getElementById('nav-kesimpulan-menu').textContent = t.navKesimpulanMenu;
+      document.getElementById('img-baduy').alt = t.altBaduy;
+      document.getElementById('img-rumah-adat').alt = t.altRumahAdat;
     }
 
     // Close mobile menu when clicking outside
