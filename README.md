@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/logo-sundawiki.png" alt="SundaWiki Logo" width="100">
+  <img src="img/sundawiki-logo.png" alt="SundaWiki Logo" width="100">
 </p>
 
 <h1 align="left">SundaWiki</h1>
