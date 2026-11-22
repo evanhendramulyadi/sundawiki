@@ -53,7 +53,7 @@
       background: rgba(43, 27, 18, 0.95);
       backdrop-filter: blur(10px);
 
-      /* 🔥 TAMBAHAN INI BIAR SELALU ADA BAYANGAN */
+      /* 🔥 ADDED THIS TO ENSURE SHADOW IS ALWAYS PRESENT */
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     }
 
@@ -218,7 +218,7 @@
       transform: translateX(-50%);
     }
 
-    /* Pengertian */
+    /* Definition */
     .pengertian-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -246,13 +246,13 @@
       margin-bottom: 1.5rem;
     }
 
-    /* Konsep Utama */
+    /* Core Concept */
     .konsep {
       background: linear-gradient(135deg, #3a2519, #1f130d);
       text-align: center;
       padding: 120px 8%;
 
-      /* 🔥 BIAR GAK NYATU */
+      /* 🔥 TO PREVENT BLENDING */
       position: relative;
       border-top: 1px solid rgba(212, 175, 55, 0.15);
       border-bottom: 1px solid rgba(212, 175, 55, 0.15);
@@ -271,14 +271,14 @@
       font-weight: 700;
     }
 
-    /* Nilai Utama */
+    /* Core Values */
     .nilai-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
 
-    /* card terakhir (Singer) jadi full width */
+    /* Last card (Singer) becomes full width */
     .nilai-card:nth-child(5) {
       grid-column: 1 / -1;
       max-width: 600px;
@@ -323,7 +323,7 @@
       margin-bottom: 1rem;
     }
 
-    /* Suku Baduy */
+    /* Baduy Tribe */
     .baduy-section {
       background: linear-gradient(135deg, #170e08, #0e0703);
       display: grid;
@@ -366,12 +366,12 @@
       transform: scale(1.08);
     }
 
-    /* Hubungan Baduy & Sunda */
+    /* Relationship Between Baduy & Sunda */
     .hubungan {
       background: var(--medium-brown);
     }
 
-    /* Kesimpulan */
+    /* Conclusion */
     .kesimpulan {
       background: linear-gradient(to bottom, #2b1b12, #1a110b);
       text-align: center;
@@ -395,7 +395,7 @@
       border-top: 1px solid rgba(212, 175, 55, 0.2);
     }
 
-    /* Animasi */
+    /* Animations */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -455,7 +455,7 @@
 
         text-align: left;
 
-        /* 🔥 TAMBAHAN PEMISAH VISUAL */
+        /* 🔥 ADDED VISUAL SEPARATOR */
         border-top: 1px solid rgba(212, 175, 55, 0.2);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
       }
@@ -539,7 +539,7 @@
     </div>
   </section>
 
-  <!-- PENGERTIAN SPIRITUALITAS SUNDA -->
+  <!-- UNDERSTANDING SUNDANESE SPIRITUALITY -->
   <section id="pengertian">
     <h2 class="section-title" id="title-pengertian">Pengertian Spiritualitas Sunda</h2>
     <div class="pengertian-grid">
@@ -565,7 +565,7 @@
     </div>
   </section>
 
-  <!-- KONSEP UTAMA -->
+  <!-- CORE CONCEPT -->
   <section class="konsep" id="konsep">
     <h2 class="section-title" id="title-konsep" style="color: #FFF6D7;">Konsep Utama</h2>
     <p class="konsep-text" id="konsep-text">
@@ -573,7 +573,7 @@
     </p>
   </section>
 
-  <!-- 5 NILAI UTAMA -->
+  <!-- 5 CORE VALUES -->
   <section id="nilai">
     <h2 class="section-title" id="title-nilai">5 Nilai Utama Spiritualitas Sunda</h2>
     <div class="nilai-grid">
@@ -645,7 +645,7 @@
   </section>
 
 
-  <!-- SUKU BADUY -->
+  <!-- BADUY TRIBE -->
   <section id="baduy" class="baduy-section">
     <div>
       <div class="baduy-img">
@@ -668,7 +668,7 @@
     </div>
   </section>
 
-  <!-- HUBUNGAN BADUY & SUNDA -->
+  <!-- RELATIONSHIP BETWEEN BADUY & SUNDA -->
   <section id="hubungan" class="hubungan">
     <div
       style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
@@ -689,7 +689,7 @@
     </div>
   </section>
 
-  <!-- KESIMPULAN -->
+  <!-- CONCLUSION -->
   <section id="kesimpulan" class="kesimpulan">
     <h2 class="section-title" id="title-kesimpulan">Kesimpulan</h2>
     <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.3rem; opacity: 0.9;" id="kesimpulan-desc">
@@ -910,7 +910,7 @@
       }
     });
 
-    // Smooth scroll saat klik logo SundaWiki
+    // Smooth scroll when clicking SundaWiki logo
     document.getElementById("logo").addEventListener("click", function (e) {
       e.preventDefault();
       window.scrollTo({
@@ -919,7 +919,7 @@
       });
     });
 
-    // Smooth scroll tombol kembali ke atas
+    // Smooth scroll for back-to-top button
     document.getElementById("btn-top").addEventListener("click", function (e) {
       e.preventDefault();
       window.scrollTo({
